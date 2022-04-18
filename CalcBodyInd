@@ -1,0 +1,30 @@
+/* Author :Mehmet KARA
+   Date: 18.04.2022-08:24
+   Program Name: Calculation Body Mass Index
+ */
+
+import java.util.Scanner;
+
+public class BodyMassIndex {
+
+    public static void main (String [] arg){
+
+        double weight, length, massIndex;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Please enter your weight for calculation body mass index: ");
+
+        weight = inp.nextDouble();
+
+        System.out.print("Please enter your lenght for calculation body mass index: ");
+
+        length = inp.nextDouble();
+
+        massIndex = weight / (length * length);
+
+        System.out.print("Your body mass index is " + massIndex);
+
+    }
+
+}
